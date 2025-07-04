@@ -31,7 +31,7 @@ const confirmDelete = () => {
   });
 };
 const submit = () => {
-  form.post(route('acacdemic_year'), {
+  form.post(route('academic_year'), {
     onFinish: () => form.academic_year = ""
   });
   toast.success(status, {

@@ -42,7 +42,7 @@ const triggerFileSelect = () => {
 
 const submit = () => {
   form.post(route('profile'), {
-    preserveScroll: true,
+    /* preserveScroll: true, */
     onFinish: () => {
       toast.success(status.value, {
         autoClose: 3000

@@ -18,13 +18,13 @@ return new class extends Migration
             $table->string('tuition_fees_total');
             $table->string('tuition_fees_per_semester');
             $table->integer('no_of_semester');
-            $table->integer('no_of_major');
+            $table->integer('no_of_course');
             $table->integer('subjects_per_semester');
-            $table->string('academic_year');
-            $table->string('semester_kh');
-            $table->string('semester_en');
-            $table->string('subject_kh');
-            $table->string('subject_en');
+            /* $table->string('academic_year'); */
+            /* $table->string('semester_kh');
+            $table->string('semester_en'); */
+            /* $table->string('subject_kh');
+            $table->string('subject_en'); */
             $table->string('created_by');
             $table->timestamps();
         });

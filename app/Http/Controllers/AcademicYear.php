@@ -21,15 +21,15 @@ class AcademicYear extends Controller
         $record->academic_year = $request->academic_year;
         $record->created_by = $request->user()->name;
         $record->save();
-        return redirect()->route('acacdemic_year')->with('status', 'Academic year has been created!');
+        return redirect()->route('academic_year')->with('status', 'Academic year has been created!');
     }
     public function destroy($id)
     {
         $academic_year = ModelsAcademicYear::where('id', $id)->first();
         if (!$academic_year) {
-            return redirect()->route('acacdemic_year')->with('status', 'Academic with that id is not found!');
+            return redirect()->route('academic_year')->with('status', 'Academic with that id is not found!');
         }
         $academic_year->delete();
-        return redirect()->route('acacdemic_year')->with('status', 'Academic year has been deleted!');
+        return redirect()->route('academic_year')->with('status', 'Academic year has been deleted!');
     }
 }
