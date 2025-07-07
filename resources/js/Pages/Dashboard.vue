@@ -40,6 +40,6 @@
         <p class="mt-4 text-gray-400 font-medium">Students</p>
       </div>
     </div>
-    <div class="bg-red-500">right</div>
+    <div class="bg-red-500">Right</div>
   </div>
 </template>

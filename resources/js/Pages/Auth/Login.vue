@@ -17,7 +17,7 @@ const submit = () => {
 
 <template>
 
-  <Head :title="- `${$page.component}`" />
+  <Head :title="` - ${$page.component}`" />
   <div class="w-full max-w-md mx-auto mt-25 bg-white p-8 rounded-lg shadow-md">
     <h2 class="text-2xl font-bold text-center text-sky-500 mb-6">Login</h2>
 
